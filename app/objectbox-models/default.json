@@ -1,0 +1,114 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "3:2347887376994289905",
+      "lastPropertyId": "5:4409339176750620402",
+      "name": "TodoListItemObjectBoxDTO",
+      "properties": [
+        {
+          "id": "1:8931490397133611997",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7422790308960677298",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2136675652643942495",
+          "name": "isComplete",
+          "type": 1
+        },
+        {
+          "id": "4:2468524068656946104",
+          "name": "createdTime",
+          "type": 6
+        },
+        {
+          "id": "5:4409339176750620402",
+          "name": "completedTime",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:2696893456081438222",
+      "lastPropertyId": "2:2346147499321273488",
+      "name": "TodoListObjectBoxDTO",
+      "properties": [
+        {
+          "id": "1:1587424111807044202",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2346147499321273488",
+          "name": "name",
+          "indexId": "1:1554207999303496269",
+          "type": 9,
+          "flags": 2080
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:111252457126113099",
+          "name": "items",
+          "targetId": "3:2347887376994289905"
+        }
+      ]
+    },
+    {
+      "id": "5:4524947638156753464",
+      "lastPropertyId": "2:5525842559521542844",
+      "name": "TodoListPrefsObjectBoxDTO",
+      "properties": [
+        {
+          "id": "1:6310369892052392784",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5525842559521542844",
+          "name": "selectedListId",
+          "indexId": "2:295483567894430229",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "TodoListObjectBoxDTO"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:4524947638156753464",
+  "lastIndexId": "2:295483567894430229",
+  "lastRelationId": "2:111252457126113099",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    9158328089360582887,
+    397440547781664594
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    2699323358121011894,
+    6720035185009691217,
+    7804894082005898202,
+    2563283648368349247,
+    1089136670178899281,
+    3475572728690165326,
+    6645043370686161164
+  ],
+  "retiredRelationUids": [
+    4988645561816141713
+  ],
+  "version": 1
+}
